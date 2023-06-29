@@ -1,14 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <title>Coding Quiz Challenge</title>
 
-    <title>Document</title>
 </head>
+
 <body>
-    
+    <!--high score button and timer-->
+    <header>
+        <div id="countdown"></div>
+        <button id="scores" type="button">High Scores</button>
+    </header>
+
+    <main>
+        <!--start screen-->
+        <section id="js-start-screen" class="start-quiz">
+            <h1>Coding Quiz Challenge</h1>
+            <p>
+                Try to answer the following code-related questions<br>
+                within the time limit. Keep in mind that incorrect<br>
+                answers will penalize your score/time by ten seconds!
+            </p>
+
+            <button id="js-start-btn" onclick=Start Quiz()>Start Quiz</button>
+        </section>
+
+        <!--questions and answers section-->
+        <section id="js-quiz-screen" class="hide">
+            <h2 id="js-question-text"></h2>
+            <ul id="js-choices">
+                <li><button id="choice-1" onclick="checkAnswer(value)"></button></li>
+                <li><button id="choice-2" onclick="checkAnswer(value)"></button></li>
+                <li><button id="choice-3" onclick="checkAnswer(value)"></button></li>
+                <li><button id="choice-4" onclick="checkAnswer(value)"></button></li>
+            </ul>
+            <div id="right-answer" class="hide">Correct!</div>
+            <div id="wrong-answer" class="hide">Wrong :/</div>
+
+        </section>
+        <!--results section-->
+        <section id="final-score" class="hide">
+            <h2 class=hide> Finished</h2>
+            <p>Final Score: <span id="score"></span></p>
+            <p>enter initials:<br> <input placeholder="initials"><br>
+                <button id="submit-score">submit score</button>
+            </p>
+        </section>
+        <!--high score section-->
+        <section id="High-score" class="hide">
+            <h2>High Scores</h2>
+        </section>
+
+
+        <script src="script.js"></script>
+
+    </main>
+
 </body>
+
 </html>
