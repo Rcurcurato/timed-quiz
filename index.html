@@ -26,35 +26,41 @@
                 within the time limit. Keep in mind that incorrect<br>
                 answers will penalize your score/time by ten seconds!
             </p>
+            <div class="start-button">
+            <button id="js-start-btn">Start Quiz</button>
+            </div>
+            </section>
 
-            <button id="js-start-btn" onclick=Start Quiz()>Start Quiz</button>
-        </section>
 
         <!--questions and answers section-->
-        <section id="js-quiz-screen" class="hide">
-            <h2 id="js-question-text"></h2>
-            <ul id="js-choices">
-                <li><button id="choice-1" onclick="checkAnswer(value)"></button></li>
-                <li><button id="choice-2" onclick="checkAnswer(value)"></button></li>
-                <li><button id="choice-3" onclick="checkAnswer(value)"></button></li>
-                <li><button id="choice-4" onclick="checkAnswer(value)"></button></li>
-            </ul>
-            <div id="right-answer" class="hide">Correct!</div>
-            <div id="wrong-answer" class="hide">Wrong :/</div>
+        <div class="container">
+            <section id="js-quiz-screen" class="hide">
+                <h2 id="js-question-text"></h2>
+                <ul id="js-choices">
+                    <li><button id="choice-1" onclick="checkAnswer(value)"></button></li>
+                    <li><button id="choice-2" onclick="checkAnswer(value)"></button></li>
+                    <li><button id="choice-3" onclick="checkAnswer(value)"></button></li>
+                    <li><button id="choice-4" onclick="checkAnswer(value)"></button></li>
+                </ul>
+                <div id="right-answer" class="hide">Correct!</div>
+                <div id="wrong-answer" class="hide">Wrong :/</div>
 
-        </section>
-        <!--results section-->
-        <section id="final-score" class="hide">
-            <h2 class=hide> Finished</h2>
-            <p>Final Score: <span id="score"></span></p>
-            <p>enter initials:<br> <input placeholder="initials"><br>
-                <button id="submit-score">submit score</button>
-            </p>
-        </section>
-        <!--high score section-->
-        <section id="High-score" class="hide">
-            <h2>High Scores</h2>
-        </section>
+            </section>
+            <!--results section-->
+            <footer>
+            <section id="final-score" class="hide">
+                <h2 class=hide> Finished</h2>
+                <p>Final Score: <span id="score"></span></p>
+                <p>enter initials:<br> <input placeholder="initials"><br>
+                    <button id="submit-score">submit score</button>
+                </p>
+            </section>
+            <!--high score section-->
+            <section id="High-score" class="hide">
+                <h2>High Scores</h2>
+            </section>
+            </footer>
+        </div>
 
 
         <script src="script.js"></script>

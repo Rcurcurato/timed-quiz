@@ -2,6 +2,13 @@
     display: none;
 }
 
+body {
+    display: flex;
+    justify-content: center;
+    padding: 50px 50px;
+    ;
+}
+
 #js-quiz-sceen p {
     display: flex;
     justify-content: center;
@@ -43,25 +50,23 @@
 
 
 #js-start-btn {
-    font-size: 20px;
+    font-size: 50px;
     background-color: purple;
 
 }
 
-#next-btn {
-
-    font-size: 20px;
-    background-color: purple;
-}
 
 #scores {
     font-size: 20px;
     background-color: purple;
+    display: flex;
+    justify-content: flex-start
 }
 
 #submit-score {
-    font-size: 20px;
+    font-size: 30px;
     background-color: purple;
+
 }
 
 #final-score {
@@ -73,3 +78,17 @@
 
 
 }
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.start-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    
+}
+
