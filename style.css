@@ -14,6 +14,18 @@ body {
     justify-content: center;
 }
 
+#js-question-text {
+
+    font-size: 30px;
+}
+
+#js-choices {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 #countdown {
     display: flex;
     justify-content: flex-end;

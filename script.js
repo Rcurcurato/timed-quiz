@@ -13,7 +13,9 @@ var choiceThree = document.getElementById("choice-3")
 var choiceFour = document.getElementById("choice-4")
 var rightAnswer = document.getElementById("right answer")
 var wrongAnswer = document.getElementById("wrong-answer")
-
+var submitScore = document.getElementById("submit-score")
+var placeHolder = document.getElementById("initials")
+var highScore = document.getElementById("high-score")
 //questions
 var questions = [
     {
@@ -76,6 +78,7 @@ startButton.addEventListener("click", function () {
     startScreen.classList.add("hide")
     quizScreen.classList.remove("hide")
     choices.classList.remove("hide")
+  
     countdown()
     showQuestion()
 
